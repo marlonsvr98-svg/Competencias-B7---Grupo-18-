@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía de Estilos · Design System UNEMI</title>
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/componentes.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <div class="fila" style="justify-content: space-between;">
+        <div class="fila">
+          <button type="button" class="menu-boton-movil" id="btnToggleMenu" aria-label="Abrir menú de navegación" aria-controls="menuLateral">☰</button>
+          <h1>Design System UNEMI</h1>
+        </div>
+        <span class="insignia insignia--primario">v1.0 · P00.3</span>
+      </div>
+    </div>
+  </header>
+
+  <div style="display: flex; flex: 1; min-height: calc(100vh - 140px);">
+    <!-- Menú lateral -->
+    <aside class="menu" id="menuLateral" aria-label="Menú de componentes">
+      <span class="menu__grupo">Componentes</span>
+      <a href="#botones" class="menu__enlace menu__enlace--activo">Botones (.btn)</a>
+      <a href="#tarjetas" class="menu__enlace">Tarjetas (.tarjeta)</a>
+      <a href="#formularios" class="menu__enlace">Formularios (.campo)</a>
+      <a href="#alertas" class="menu__enlace">Alertas (.alerta)</a>
+      <a href="#tablas" class="menu__enlace">Tablas (.tabla)</a>
+      <a href="#retroalimentacion" class="menu__enlace">Insignias y Chips</a>
+      <a href="#progreso-carga" class="menu__enlace">Progreso y Carga</a>
+      <a href="#estados-dialogos" class="menu__enlace">Modales y Toasts</a>
+      <a href="#estado-vacio" class="menu__enlace">Estado Vacío (.vacio)</a>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main id="contenido" class="contenedor" style="padding-top: var(--espacio-xl); padding-bottom: var(--espacio-xl);">
+      <div class="pila" style="gap: var(--espacio-2xl);">
+
+        <!-- Sección Botones -->
+        <section id="botones" class="pila">
+          <h2>1. Botones (.btn)</h2>
+          <p>Variantes de botones con soporte de foco visible y estados interactivos.</p>
+          <div class="tarjeta">
+            <div class="fila">
+              <button type="button" class="btn btn--primario">Primario</button>
+              <button type="button" class="btn btn--secundario">Secundario</button>
+              <button type="button" class="btn btn--peligro">Peligro</button>
+              <button type="button" class="btn btn--texto">Texto / Enlace</button>
+              <button type="button" class="btn btn--primario btn--pequeno">Pequeño</button>
+              <button type="button" class="btn btn--primario" disabled>Deshabilitado</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Tarjetas -->
+        <section id="tarjetas" class="pila">
+          <h2>2. Tarjetas (.tarjeta)</h2>
+          <div class="grid-auto">
+            <article class="tarjeta">
+              <h3>Tarjeta Estándar</h3>
+              <p>Superficie limpia con borde suave y sombra de elevación de nivel 1.</p>
+              <button type="button" class="btn btn--secundario btn--pequeno">Acción</button>
+            </article>
+
+            <article class="tarjeta tarjeta--destacada">
+              <h3>Tarjeta Destacada</h3>
+              <p>Incluye el acento institucional naranja UNEMI en el lateral izquierdo.</p>
+              <button type="button" class="btn btn--primario btn--pequeno">Ver más</button>
+            </article>
+          </div>
+        </section>
+
+        <!-- Sección Formularios -->
+        <section id="formularios" class="pila">
+          <h2>3. Campos de Formulario (.campo)</h2>
+          <div class="tarjeta">
+            <div class="grid-auto">
+              <div class="campo">
+                <label for="campoNombre">Nombre completo</label>
+                <input type="text" id="campoNombre" placeholder="Ej. Ana Belén Pérez">
+              </div>
+
+              <div class="campo">
+                <label for="campoRol">Rol institucional</label>
+                <select id="campoRol">
+                  <option value="">Seleccione una opción</option>
+                  <option value="estudiante">Estudiante</option>
+                  <option value="docente">Docente</option>
+                  <option value="admin">Administrador</option>
+                </select>
+              </div>
+
+              <div class="campo" style="grid-column: 1 / -1;">
+                <label for="campoComentario">Observaciones</label>
+                <textarea id="campoComentario" placeholder="Escriba sus comentarios aquí..."></textarea>
+              </div>
+
+              <div class="campo" style="grid-column: 1 / -1;">
+                <label for="campoInvalido">Correo electrónico (con error)</label>
+                <input type="email" id="campoInvalido" value="correo-invalido" aria-invalid="true" aria-describedby="errorCorreo">
+                <span id="errorCorreo" class="campo__error">El formato del correo institucional es incorrecto.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Alertas -->
+        <section id="alertas" class="pila">
+          <h2>4. Alertas (.alerta)</h2>
+          <div class="pila">
+            <div class="alerta alerta--info" role="status">
+              <strong>Información:</strong> El periodo de matrículas para el nuevo ciclo académico se encuentra abierto.
+            </div>
+            <div class="alerta alerta--exito" role="status">
+              <strong>Éxito:</strong> Su intento y progreso han sido guardados satisfactoriamente.
+            </div>
+            <div class="alerta alerta--advertencia" role="alert">
+              <strong>Advertencia:</strong> La evaluación finalizará en 5 minutos. Asegúrese de enviar sus respuestas.
+            </div>
+            <div class="alerta alerta--error" role="alert">
+              <strong>Error:</strong> No se pudo conectar con el servicio. Verifique su conexión de red.
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Tablas -->
+        <section id="tablas" class="pila">
+          <h2>5. Tabla Adaptable (.tabla con contenedor)</h2>
+          <p>Desplazable horizontalmente en pantallas estrechas sin romper el diseño.</p>
+          <div class="tabla-contenedor">
+            <table class="tabla">
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Asignatura</th>
+                  <th>Paralelo</th>
+                  <th>Docente</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ASI-001</td>
+                  <td>Competencias Digitales</td>
+                  <td>A1</td>
+                  <td>Ing. Carlos Riera</td>
+                  <td><span class="insignia insignia--exito">Activo</span></td>
+                </tr>
+                <tr>
+                  <td>ASI-002</td>
+                  <td>Algoritmos y Estructuras</td>
+                  <td>B2</td>
+                  <td>Dra. Elena Vargas</td>
+                  <td><span class="insignia insignia--info">En curso</span></td>
+                </tr>
+                <tr>
+                  <td>ASI-003</td>
+                  <td>Metodología de Investigación</td>
+                  <td>C1</td>
+                  <td>Msc. Roberto Salazar</td>
+                  <td><span class="insignia insignia--advertencia">Pendiente</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Sección Insignias y Chips -->
+        <section id="retroalimentacion" class="pila">
+          <h2>6. Insignias (.insignia) y Chips (.chip)</h2>
+          <div class="tarjeta">
+            <div class="pila">
+              <div>
+                <h4>Insignias</h4>
+                <div class="fila" style="margin-top: var(--espacio-s);">
+                  <span class="insignia insignia--primario">Primario</span>
+                  <span class="insignia insignia--info">Informativo</span>
+                  <span class="insignia insignia--exito">Completado</span>
+                  <span class="insignia insignia--advertencia">Revisión</span>
+                  <span class="insignia insignia--error">Fallido</span>
+                </div>
+              </div>
+
+              <div>
+                <h4>Chips</h4>
+                <div class="fila" style="margin-top: var(--espacio-s);">
+                  <span class="chip">Pedagogía</span>
+                  <span class="chip chip--activo">Gamificación</span>
+                  <span class="chip">
+                    Inteligencia Artificial
+                    <button type="button" aria-label="Eliminar chip">✕</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Progreso y Carga -->
+        <section id="progreso-carga" class="pila">
+          <h2>7. Progreso (.progreso) y Carga (.cargando)</h2>
+          <div class="tarjeta">
+            <div class="pila">
+              <div>
+                <h4>Barra de Progreso (70%)</h4>
+                <div class="progreso" style="margin-top: var(--espacio-s);">
+                  <span class="progreso__barra" style="width: 70%;"></span>
+                </div>
+              </div>
+
+              <div>
+                <h4>Indicador de Carga (.cargando)</h4>
+                <div class="fila" style="margin-top: var(--espacio-s);">
+                  <span class="cargando" role="status" aria-label="Cargando"></span>
+                  <small>Procesando solicitud...</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Modales y Toasts -->
+        <section id="estados-dialogos" class="pila">
+          <h2>8. Modales (.modal) y Toasts (.toast)</h2>
+          <div class="tarjeta">
+            <p>Componentes accesibles para alertas flotantes y cuadros de diálogo.</p>
+            <div class="fila">
+              <button type="button" class="btn btn--primario" id="btnProbarModal">Abrir Modal de Ejemplo</button>
+              <button type="button" class="btn btn--secundario" id="btnProbarToast">Mostrar Toast de Ejemplo</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Estado Vacío -->
+        <section id="estado-vacio" class="pila">
+          <h2>9. Estado Vacío (.vacio)</h2>
+          <div class="vacio">
+            <div class="vacio__icono">📂</div>
+            <h3 class="vacio__titulo">No se encontraron actividades</h3>
+            <p class="vacio__descripcion">Actualmente no existen tareas ni cuestionarios programados para este tema de estudio.</p>
+            <button type="button" class="btn btn--primario">Crear nueva actividad</button>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p>&copy; 2026 Ecosistema Educativo Digital · Universidad Estatal de Milagro (UNEMI)</p>
+      <small><a href="/index.html">← Volver al portal de inicio</a></small>
+    </div>
+  </footer>
+
+  <!-- Contenedor flotante de avisos -->
+  <div id="contenedor-avisos" class="contenedor-avisos" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Modal de demostración (oculto por defecto) -->
+  <div id="modalEjemplo" class="modal-fondo oculto">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTituloDemo">
+      <header class="modal-cabecera">
+        <h2 id="modalTituloDemo">Confirmación de Registro</h2>
+        <button type="button" class="btn btn--texto btn--pequeno" id="btnCerrarModalX" aria-label="Cerrar modal">✕</button>
+      </header>
+      <div class="modal-cuerpo">
+        <p>¿Está seguro de enviar sus respuestas finales para la evaluación diagnóstica? Una vez enviadas no se podrán editar.</p>
+      </div>
+      <footer class="modal-pie">
+        <button type="button" class="btn btn--secundario" id="btnCancelarModal">Cancelar</button>
+        <button type="button" class="btn btn--primario" id="btnAceptarModal">Confirmar y Enviar</button>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Toggle menú móvil
+    const btnMenu = document.getElementById('btnToggleMenu');
+    const menu = document.getElementById('menuLateral');
+    btnMenu?.addEventListener('click', () => {
+      menu?.classList.toggle('menu--abierto');
+    });
+
+    // Demostración modal accesible
+    const modalEjemplo = document.getElementById('modalEjemplo');
+    const btnProbarModal = document.getElementById('btnProbarModal');
+    const btnCancelarModal = document.getElementById('btnCancelarModal');
+    const btnAceptarModal = document.getElementById('btnAceptarModal');
+    const btnCerrarModalX = document.getElementById('btnCerrarModalX');
+
+    function abrirModal() {
+      modalEjemplo?.classList.remove('oculto');
+      btnCancelarModal?.focus();
+    }
+
+    function cerrarModal() {
+      modalEjemplo?.classList.add('oculto');
+      btnProbarModal?.focus();
+    }
+
+    btnProbarModal?.addEventListener('click', abrirModal);
+    btnCancelarModal?.addEventListener('click', cerrarModal);
+    btnAceptarModal?.addEventListener('click', cerrarModal);
+    btnCerrarModalX?.addEventListener('click', cerrarModal);
+
+    modalEjemplo?.addEventListener('click', (e) => {
+      if (e.target === modalEjemplo) cerrarModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modalEjemplo?.classList.contains('oculto')) {
+        cerrarModal();
+      }
+    });
+
+    // Demostración Toast
+    const btnProbarToast = document.getElementById('btnProbarToast');
+    const contenedorAvisos = document.getElementById('contenedor-avisos');
+
+    btnProbarToast?.addEventListener('click', () => {
+      const toast = document.createElement('div');
+      toast.className = 'toast toast--exito';
+      toast.setAttribute('role', 'status');
+      toast.textContent = '¡Acción realizada con éxito! (Desaparece en 4s)';
+      contenedorAvisos?.appendChild(toast);
+      setTimeout(() => {
+        toast.remove();
+      }, 4000);
+    });
+  </script>
+</body>
+</html>

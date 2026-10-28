@@ -1,0 +1,187 @@
+/**
+ * publico/css/modulos/editor-tema.css
+ * Estilos para la ficha del tema y el glosario asociado.
+ */
+
+.editor-tema__cabecera {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-m) var(--espacio-l);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-m);
+}
+
+.editor-tema__tabs {
+  display: flex;
+  gap: var(--espacio-xs);
+  border-bottom: 2px solid var(--color-borde);
+  margin-bottom: var(--espacio-m);
+}
+
+.editor-tema__tab {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: var(--espacio-s) var(--espacio-m);
+  font-family: var(--fuente-base);
+  font-size: var(--texto-s);
+  font-weight: var(--peso-seminegrita);
+  color: var(--color-texto-suave);
+  cursor: pointer;
+  transition: var(--transicion);
+  margin-bottom: -2px;
+}
+
+.editor-tema__tab:hover {
+  color: var(--color-primario);
+}
+
+.editor-tema__tab--activa {
+  color: var(--color-primario);
+  border-bottom-color: var(--color-primario);
+}
+
+.editor-seccion {
+  display: none;
+}
+
+.editor-seccion--activa {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+}
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacio-l);
+}
+
+@media (max-width: 768px) {
+  .grid-2-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Listas dinámicas (objetivos, ejemplos, errores, preguntas) */
+.lista-dinamica {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+}
+
+.lista-dinamica__item {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+}
+
+.lista-dinamica__item input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* Recursos */
+.recursos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+}
+
+.recurso-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espacio-s);
+  padding: var(--espacio-s) var(--espacio-m);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  background-color: var(--color-superficie);
+}
+
+.recurso-card .campo-inline {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  flex: 1;
+  min-width: 140px;
+}
+
+.recurso-card input,
+.recurso-card select {
+  margin-bottom: 0;
+}
+
+/* Contador de palabras */
+.contador-palabras {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--texto-xs);
+  margin-top: 4px;
+}
+
+.contador-palabras--optimo {
+  color: var(--color-exito);
+  font-weight: var(--peso-seminegrita);
+}
+
+.contador-palabras--alerta {
+  color: var(--color-advertencia);
+}
+
+.contador-palabras--fuera {
+  color: var(--color-error);
+}
+
+/* Vista previa de resumen */
+.vista-previa-resumen {
+  margin-top: var(--espacio-s);
+  padding: var(--espacio-m);
+  background-color: var(--color-fondo);
+  border: 1px dashed var(--color-borde);
+  border-radius: var(--radio-m);
+  font-size: var(--texto-s);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* Indicadores de Glosario */
+.glosario-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-m);
+  padding: var(--espacio-m) var(--espacio-l);
+  border-radius: var(--radio-m);
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+}
+
+.glosario-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espacio-m);
+}
+
+.btn-icono-accion {
+  background: transparent;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-s);
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: var(--texto-xs);
+  color: var(--color-texto);
+  transition: var(--transicion);
+}
+
+.btn-icono-accion:hover {
+  background-color: var(--color-fondo);
+  border-color: var(--color-primario);
+}

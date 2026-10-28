@@ -1,0 +1,35 @@
+/**
+ * publico/css/modulos/distributivo.css
+ * Estilos para el módulo de distributivo.
+ */
+
+.dist-estudiantes-lista {
+  max-height: 180px;
+  overflow-y: auto;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  padding: var(--espacio-s);
+  background-color: var(--color-superficie);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+}
+
+.dist-estudiante-item {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-s);
+  padding: var(--espacio-xs) var(--espacio-s);
+  border-radius: var(--radio-s);
+  transition: var(--transicion);
+  cursor: pointer;
+}
+
+.dist-estudiante-item:hover {
+  background-color: var(--color-fondo);
+}
+
+.dist-estudiante-item input[type="checkbox"] {
+  cursor: pointer;
+  margin: 0;
+}

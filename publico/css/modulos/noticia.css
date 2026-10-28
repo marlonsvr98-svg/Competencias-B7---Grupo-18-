@@ -1,0 +1,49 @@
+/**
+ * publico/css/modulos/noticia.css
+ * Estilos para la vista de detalle de una noticia.
+ */
+
+.noticia-detalle-articulo {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+}
+
+.noticia-detalle-portada {
+  width: 100%;
+  max-height: 440px;
+  border-radius: var(--radio-l);
+  object-fit: cover;
+  box-shadow: var(--sombra-1);
+}
+
+.noticia-detalle-resumen {
+  font-size: var(--texto-m);
+  font-weight: var(--peso-medio);
+  line-height: var(--interlineado-comodo);
+  color: var(--color-texto-suave);
+  border-left: 3px solid var(--color-primario);
+  padding-left: var(--espacio-m);
+  margin: 0;
+}
+
+.noticia-detalle-cuerpo {
+  font-size: var(--texto-m);
+  line-height: var(--interlineado-comodo);
+  color: var(--color-texto);
+}
+
+.noticia-detalle-cuerpo p {
+  margin-bottom: var(--espacio-m);
+}
+
+.noticia-detalle-cuerpo ul {
+  padding-left: var(--espacio-l);
+  margin-bottom: var(--espacio-m);
+}
+
+.noticia-detalle-cuerpo li {
+  margin-bottom: var(--espacio-xs);
+}

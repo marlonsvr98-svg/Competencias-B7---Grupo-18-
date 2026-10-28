@@ -1,0 +1,35 @@
+/**
+ * publico/css/modulos/prueba-datos.css
+ * Estilos específicos del módulo de prueba de datos.
+ */
+
+.lista-registros {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+}
+
+.item-registro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--espacio-s) var(--espacio-m);
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  gap: var(--espacio-m);
+}
+
+.item-registro__texto {
+  font-size: var(--texto-s);
+  color: var(--color-texto);
+  word-break: break-word;
+}
+
+.item-registro__meta {
+  font-size: var(--texto-xs);
+  color: var(--color-texto-suave);
+  white-space: nowrap;
+}

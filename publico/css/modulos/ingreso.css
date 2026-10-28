@@ -1,0 +1,17 @@
+/**
+ * publico/css/modulos/ingreso.css
+ * Estilos específicos para la página de ingreso.
+ */
+
+.tarjeta-auth {
+  max-width: 440px;
+  margin: var(--espacio-xl) auto;
+}
+
+.tarjeta-auth__pie {
+  margin-top: var(--espacio-l);
+  padding-top: var(--espacio-m);
+  border-top: 1px solid var(--color-borde);
+  text-align: center;
+  font-size: var(--texto-s);
+}

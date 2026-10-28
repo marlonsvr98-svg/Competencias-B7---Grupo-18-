@@ -1,0 +1,109 @@
+/**
+ * publico/css/modulos/editor-contenidos.css
+ * Estilos para el editor de contenidos (unidades y temas).
+ */
+
+.editor-asig-banner {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-m) var(--espacio-l);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-m);
+}
+
+.editor-paneles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacio-l);
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .editor-paneles {
+    grid-template-columns: 1fr;
+  }
+}
+
+.editor-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.editor-lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+}
+
+.editor-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--espacio-s) var(--espacio-m);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  background-color: var(--color-superficie);
+  transition: var(--transicion);
+  cursor: pointer;
+  gap: var(--espacio-s);
+}
+
+.editor-item:hover {
+  border-color: var(--color-primario);
+}
+
+.editor-item--activo {
+  border-color: var(--color-primario);
+  background-color: var(--color-fondo);
+  box-shadow: var(--sombra-1);
+}
+
+.editor-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.editor-item__titulo {
+  font-weight: var(--peso-seminegrita);
+  font-size: var(--texto-s);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editor-item__acciones {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  flex-shrink: 0;
+}
+
+.btn-icono {
+  background: transparent;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-s);
+  cursor: pointer;
+  padding: 4px 6px;
+  font-size: var(--texto-xs);
+  line-height: 1;
+  color: var(--color-texto);
+  transition: var(--transicion);
+}
+
+.btn-icono:hover:not(:disabled) {
+  background-color: var(--color-fondo);
+  border-color: var(--color-primario);
+}
+
+.btn-icono:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}

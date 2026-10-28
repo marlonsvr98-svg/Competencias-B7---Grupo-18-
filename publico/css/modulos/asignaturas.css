@@ -1,0 +1,65 @@
+/**
+ * publico/css/modulos/asignaturas.css
+ * Estilos para el catálogo de mis asignaturas con barras de avance.
+ */
+
+.asignaturas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--espacio-l);
+  margin-top: var(--espacio-m);
+}
+
+.tarjeta-asignatura {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--espacio-m);
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform var(--transicion), box-shadow var(--transicion);
+}
+
+.tarjeta-asignatura:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primario);
+  box-shadow: var(--sombra-2);
+}
+
+.tarjeta-asignatura__cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--espacio-s);
+}
+
+.tarjeta-asignatura__titulo {
+  font-size: var(--texto-l);
+  margin: 0;
+  color: var(--color-primario);
+}
+
+.tarjeta-asignatura__descripcion {
+  font-size: var(--texto-s);
+  color: var(--color-texto-suave);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+}
+
+.tarjeta-asignatura__progreso-bloque {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+  padding-top: var(--espacio-s);
+  border-top: 1px solid var(--color-borde);
+}
+
+.tarjeta-asignatura__progreso-etiqueta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--texto-xs);
+}

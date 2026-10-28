@@ -1,0 +1,74 @@
+/**
+ * publico/css/modulos/editor-noticia.css
+ * Estilos para el editor y vista previa de noticias.
+ */
+
+.editor-noticia-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacio-l);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .editor-noticia-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contador-caracteres {
+  display: flex;
+  justify-content: flex-end;
+  font-size: var(--texto-xs);
+  color: var(--color-texto-suave);
+  margin-top: 4px;
+}
+
+.contador-caracteres--limite {
+  color: var(--color-error);
+  font-weight: var(--peso-seminegrita);
+}
+
+.imagen-previa-contenedor {
+  width: 100%;
+  max-height: 220px;
+  background-color: var(--color-fondo);
+  border: 1px dashed var(--color-borde);
+  border-radius: var(--radio-m);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: var(--espacio-xs);
+}
+
+.imagen-previa-img {
+  width: 100%;
+  height: 100%;
+  max-height: 220px;
+  object-fit: cover;
+}
+
+.vista-previa-tarjeta {
+  position: sticky;
+  top: var(--espacio-l);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.vista-previa-cuerpo {
+  font-size: var(--texto-s);
+  line-height: var(--interlineado-comodo);
+  color: var(--color-texto);
+  word-break: break-word;
+}
+
+.vista-previa-cuerpo p {
+  margin-bottom: var(--espacio-s);
+}
+
+.vista-previa-cuerpo ul {
+  padding-left: var(--espacio-m);
+  margin-bottom: var(--espacio-s);
+}

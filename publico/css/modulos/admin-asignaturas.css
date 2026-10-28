@@ -1,0 +1,32 @@
+/**
+ * publico/css/modulos/admin-asignaturas.css
+ * Estilos para el módulo de administración de asignaturas.
+ */
+
+.admin-asig-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--espacio-l);
+}
+
+.admin-asig-tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.admin-asig-cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+}
+
+.admin-asig-pie {
+  margin-top: var(--espacio-l);
+  padding-top: var(--espacio-m);
+  border-top: 1px solid var(--color-borde);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

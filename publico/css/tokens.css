@@ -1,0 +1,62 @@
+:root {
+  /* Colores */
+  --color-primario: #002e45;
+  --color-primario-oscuro: #1c3247;
+  --color-secundario: #264763;
+  --color-acento: #ff6900;
+  --color-exito: #107c41;
+  --color-advertencia: #b34700;
+  --color-error: #b3261e;
+  --color-info: #0c6194;
+  --color-fondo: #f5f7f8;
+  --color-superficie: #ffffff;
+  --color-borde: #dfe7ec;
+  --color-texto: #182d3e;
+  --color-texto-suave: #506575;
+  --color-texto-inverso: #ffffff;
+
+  /* Tipografía */
+  --fuente-base: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --fuente-titulos: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --texto-xs: 0.75rem;    /* 12px */
+  --texto-s: 0.875rem;    /* 14px */
+  --texto-m: 1rem;        /* 16px */
+  --texto-l: 1.125rem;    /* 18px */
+  --texto-xl: 1.25rem;    /* 20px */
+  --texto-2xl: 1.5rem;    /* 24px */
+  --texto-3xl: 1.875rem;  /* 30px */
+
+  --peso-regular: 400;
+  --peso-medio: 500;
+  --peso-seminegrita: 600;
+  --peso-negrita: 700;
+  --peso-extranegrita: 800;
+
+  --interlineado-apretado: 1.25;
+  --interlineado-normal: 1.5;
+  --interlineado-suelto: 1.75;
+
+  /* Espaciados */
+  --espacio-xs: 0.25rem;  /* 4px */
+  --espacio-s: 0.5rem;    /* 8px */
+  --espacio-m: 1rem;      /* 16px */
+  --espacio-l: 1.5rem;    /* 24px */
+  --espacio-xl: 2rem;     /* 32px */
+  --espacio-2xl: 3rem;    /* 48px */
+
+  /* Radios */
+  --radio-s: 0.25rem;     /* 4px */
+  --radio-m: 0.5rem;      /* 8px */
+  --radio-l: 0.75rem;     /* 12px */
+  --radio-completo: 9999px;
+
+  /* Sombras */
+  --sombra-1: 0 1px 3px rgba(0, 46, 69, 0.08), 0 1px 2px rgba(0, 46, 69, 0.05);
+  --sombra-2: 0 4px 6px -1px rgba(0, 46, 69, 0.1), 0 2px 4px -1px rgba(0, 46, 69, 0.06);
+  --sombra-3: 0 10px 15px -3px rgba(0, 46, 69, 0.12), 0 4px 6px -2px rgba(0, 46, 69, 0.08);
+
+  /* Transición y estructura */
+  --transicion: all 0.2s ease-in-out;
+  --ancho-maximo: 1200px;
+}

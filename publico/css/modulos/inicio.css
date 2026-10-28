@@ -1,0 +1,131 @@
+/**
+ * publico/css/modulos/inicio.css
+ * Estilos para la página de inicio (con y sin sesión).
+ */
+
+.inicio-hero {
+  background: linear-gradient(135deg, var(--color-superficie), var(--color-fondo));
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+  box-shadow: var(--sombra-1);
+}
+
+.inicio-hero__titulo {
+  font-size: var(--texto-xxl);
+  color: var(--color-primario);
+  margin: 0;
+  line-height: var(--interlineado-apretado);
+}
+
+.inicio-hero__descripcion {
+  font-size: var(--texto-m);
+  color: var(--color-texto-suave);
+  max-width: 680px;
+  margin: 0;
+  line-height: var(--interlineado-comodo);
+}
+
+/* Continuar donde te quedaste */
+.tarjeta-continuar {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-acento);
+  border-left: 5px solid var(--color-acento);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-m) var(--espacio-l);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  box-shadow: var(--sombra-1);
+}
+
+/* Accesos rápidos docentes/admin */
+.accesos-rapidos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--espacio-m);
+}
+
+.acceso-rapido-card {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-s);
+  padding: var(--espacio-m);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  background-color: var(--color-superficie);
+  text-decoration: none !important;
+  color: inherit;
+  font-weight: var(--peso-seminegrita);
+  transition: var(--transicion);
+}
+
+.acceso-rapido-card:hover {
+  border-color: var(--color-primario);
+  background-color: var(--color-fondo);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-1);
+}
+
+/* Cuadrículas de contenidos */
+.inicio-grid-asignaturas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--espacio-m);
+}
+
+.inicio-tarjeta-asignatura {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--espacio-s);
+  padding: var(--espacio-m);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  background-color: var(--color-superficie);
+  text-decoration: none !important;
+  color: inherit;
+  transition: var(--transicion);
+}
+
+.inicio-tarjeta-asignatura:hover {
+  border-color: var(--color-primario);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-1);
+}
+
+.inicio-grid-noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--espacio-m);
+}
+
+.inicio-noticia-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  background-color: var(--color-superficie);
+  overflow: hidden;
+  text-decoration: none !important;
+  color: inherit;
+  transition: var(--transicion);
+}
+
+.inicio-noticia-card:hover {
+  border-color: var(--color-primario);
+  box-shadow: var(--sombra-1);
+}
+
+.inicio-noticia-card__img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  background-color: var(--color-fondo);
+}

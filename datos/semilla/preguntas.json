@@ -1,0 +1,351 @@
+[
+  {
+    "id": "pre_000001",
+    "tipo": "opcion",
+    "enunciado": "Al analizar la interacción entre el sistema digestivo y el sistema circulatorio, ¿cuál es la función principal de esta relación en el cuerpo humano?",
+    "opciones": [
+      "Transportar los nutrientes absorbidos en el intestino hacia todas las células del cuerpo.",
+      "Eliminar directamente los desechos sólidos generados en el proceso de digestión.",
+      "Bombear sangre oxigenada exclusivamente hacia el estómago y los intestinos.",
+      "Filtrar las sustancias tóxicas que ingresan a través de los alimentos procesados."
+    ],
+    "correcta": 0,
+    "retroalimentacion": "El sistema circulatorio transporta los nutrientes que el sistema digestivo absorbe en el intestino delgado hacia todas las células del organismo para su nutrición.",
+    "temaId": "tem_000006",
+    "nivel": 4,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:06:39.393Z"
+  },
+  {
+    "id": "pre_000002",
+    "tipo": "opcion",
+    "enunciado": "Si una persona realiza un ejercicio físico intenso, ¿qué relación funcional se puede analizar entre el sistema respiratorio y el sistema circulatorio?",
+    "opciones": [
+      "Disminuyen su actividad para conservar la energía acumulada en los tejidos.",
+      "Aumentan su frecuencia para abastecer de mayor cantidad de oxígeno a los músculos.",
+      "Detienen el intercambio de gases para evitar la fatiga pulmonar y cardiaca.",
+      "Reemplazan el oxígeno por dióxido de carbono directamente en los tejidos activos."
+    ],
+    "correcta": 1,
+    "retroalimentacion": "Durante el ejercicio, ambos sistemas incrementan su ritmo para captar más oxígeno en los pulmones y bombearlo rápidamente hacia los músculos que lo demandan.",
+    "temaId": "tem_000006",
+    "nivel": 4,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:06:40.871Z"
+  },
+  {
+    "id": "pre_000003",
+    "tipo": "vf",
+    "enunciado": "Analizando la estructura de los sistemas del cuerpo humano, el sistema nervioso y el sistema endocrino trabajan de manera coordinada para regular y controlar las funciones de los demás órganos.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "El sistema nervioso y el endocrino son los principales encargados de la coordinación y regulación corporal mediante impulsos eléctricos y hormonas, respectivamente.",
+    "temaId": "tem_000006",
+    "nivel": 4,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:06:41.384Z"
+  },
+  {
+    "id": "pre_000004",
+    "tipo": "vf",
+    "enunciado": "Al analizar el proceso de excreción, los pulmones y la piel participan en la eliminación de los mismos desechos líquidos que filtran los riñones.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Aunque todos son órganos excretores, los riñones eliminan urea y exceso de agua (orina), los pulmones expulsan dióxido de carbono y la piel secreta sudor con sales y agua, cumpliendo roles diferentes.",
+    "temaId": "tem_000006",
+    "nivel": 4,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:06:42.271Z"
+  },
+  {
+    "id": "pre_000005",
+    "tipo": "completar",
+    "enunciado": "Para que las células obtengan energía a partir de los alimentos, el sistema digestivo aporta nutrientes y el sistema respiratorio aporta oxígeno, elementos que son distribuidos por el sistema ____.",
+    "correcta": "circulatorio",
+    "retroalimentacion": "El sistema circulatorio actúa como el medio de transporte que integra las funciones de nutrición y respiración al llevar oxígeno y nutrientes a cada célula.",
+    "temaId": "tem_000006",
+    "nivel": 4,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:06:43.400Z"
+  },
+  {
+    "id": "pre_000006",
+    "tipo": "opcion",
+    "enunciado": "¿Cuál de los siguientes órganos forma parte principal del sistema circulatorio humano?",
+    "opciones": [
+      "El estómago",
+      "El corazón",
+      "Los pulmones",
+      "Los riñones"
+    ],
+    "correcta": 1,
+    "retroalimentacion": "El corazón es el órgano principal del sistema circulatorio, encargado de bombear la sangre a todo el cuerpo.",
+    "temaId": "tem_000006",
+    "nivel": 1,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:08:51.648Z"
+  },
+  {
+    "id": "pre_000007",
+    "tipo": "opcion",
+    "enunciado": "¿Qué sistema del cuerpo humano se encarga principalmente del intercambio de gases como el oxígeno y el dióxido de carbono?",
+    "opciones": [
+      "Sistema digestivo",
+      "Sistema respiratorio",
+      "Sistema óseo",
+      "Sistema muscular"
+    ],
+    "correcta": 1,
+    "retroalimentacion": "El sistema respiratorio incluye los pulmones y vías aéreas para realizar el intercambio gaseoso.",
+    "temaId": "tem_000006",
+    "nivel": 1,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:08:51.763Z"
+  },
+  {
+    "id": "pre_000008",
+    "tipo": "vf",
+    "enunciado": "El sistema digestivo tiene como función transformar los alimentos para que el cuerpo pueda absorber sus nutrientes.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Es verdadero, ya que el proceso digestivo descompone los alimentos en sustancias más simples utilizables por el organismo.",
+    "temaId": "tem_000006",
+    "nivel": 1,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:08:51.913Z"
+  },
+  {
+    "id": "pre_000009",
+    "tipo": "vf",
+    "enunciado": "El sistema óseo está formado principalmente por músculos que permiten el movimiento voluntario.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso porque el sistema óseo está formado por huesos y cartílagos, mientras que el movimiento depende principalmente del sistema muscular.",
+    "temaId": "tem_000006",
+    "nivel": 1,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:08:52.028Z"
+  },
+  {
+    "id": "pre_000010",
+    "tipo": "completar",
+    "enunciado": "El conjunto de huesos que da soporte y protección a los órganos internos del cuerpo humano se conoce como sistema ____.",
+    "opciones": [],
+    "correcta": "óseo",
+    "retroalimentacion": "El sistema óseo o esquelético proporciona la estructura rígida y protección a los órganos vitales.",
+    "temaId": "tem_000006",
+    "nivel": 1,
+    "origen": "ia",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T00:08:52.137Z"
+  },
+  {
+    "id": "pre_000011",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "opcion",
+    "enunciado": "Pregunta formativa de prueba 1 sobre La Célula: Estructura y Función",
+    "opciones": [
+      "Opción A",
+      "Opción B",
+      "Opción C",
+      "Opción D"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Explicación para pregunta 1",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:01.057Z"
+  },
+  {
+    "id": "pre_000012",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "vf",
+    "enunciado": "Pregunta formativa de prueba 2 sobre La Célula: Estructura y Función",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Explicación para pregunta 2",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:02.780Z"
+  },
+  {
+    "id": "pre_000013",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "Pregunta formativa de prueba 3 sobre La Célula: Estructura y Función",
+    "opciones": [],
+    "correcta": "fotosintesis",
+    "retroalimentacion": "Explicación para pregunta 3",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:02.897Z"
+  },
+  {
+    "id": "pre_000014",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "opcion",
+    "enunciado": "Pregunta formativa de prueba 4 sobre La Célula: Estructura y Función",
+    "opciones": [
+      "Opción A",
+      "Opción B",
+      "Opción C",
+      "Opción D"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Explicación para pregunta 4",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:03.009Z"
+  },
+  {
+    "id": "pre_000015",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "vf",
+    "enunciado": "Pregunta formativa de prueba 5 sobre La Célula: Estructura y Función",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Explicación para pregunta 5",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:03.121Z"
+  },
+  {
+    "id": "pre_000016",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "Pregunta formativa de prueba 6 sobre La Célula: Estructura y Función",
+    "opciones": [],
+    "correcta": "fotosintesis",
+    "retroalimentacion": "Explicación para pregunta 6",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:03.228Z"
+  },
+  {
+    "id": "pre_000017",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "opcion",
+    "enunciado": "Pregunta formativa de prueba 7 sobre La Célula: Estructura y Función",
+    "opciones": [
+      "Opción A",
+      "Opción B",
+      "Opción C",
+      "Opción D"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Explicación para pregunta 7",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:03.338Z"
+  },
+  {
+    "id": "pre_000018",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "vf",
+    "enunciado": "Pregunta formativa de prueba 8 sobre La Célula: Estructura y Función",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Explicación para pregunta 8",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:03.444Z"
+  },
+  {
+    "id": "pre_000019",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "Pregunta formativa de prueba 9 sobre La Célula: Estructura y Función",
+    "opciones": [],
+    "correcta": "fotosintesis",
+    "retroalimentacion": "Explicación para pregunta 9",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:03.554Z"
+  },
+  {
+    "id": "pre_000020",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "opcion",
+    "enunciado": "Pregunta formativa de prueba 10 sobre La Célula: Estructura y Función",
+    "opciones": [
+      "Opción A",
+      "Opción B",
+      "Opción C",
+      "Opción D"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Explicación para pregunta 10",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:03.663Z"
+  },
+  {
+    "id": "pre_000021",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "vf",
+    "enunciado": "Pregunta formativa de prueba 11 sobre La Célula: Estructura y Función",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Explicación para pregunta 11",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:03.772Z"
+  },
+  {
+    "id": "pre_000022",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "Pregunta formativa de prueba 12 sobre La Célula: Estructura y Función",
+    "opciones": [],
+    "correcta": "fotosintesis",
+    "retroalimentacion": "Explicación para pregunta 12",
+    "origen": "manual",
+    "estado": "aprobado",
+    "fecha": "2026-10-28T21:54:03.880Z"
+  }
+]

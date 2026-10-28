@@ -1,0 +1,17 @@
+/**
+ * publico/css/modulos/registro.css
+ * Estilos específicos para el registro de estudiantes.
+ */
+
+.tarjeta-registro {
+  max-width: 520px;
+  margin: var(--espacio-xl) auto;
+}
+
+.tarjeta-registro__pie {
+  margin-top: var(--espacio-l);
+  padding-top: var(--espacio-m);
+  border-top: 1px solid var(--color-borde);
+  text-align: center;
+  font-size: var(--texto-s);
+}

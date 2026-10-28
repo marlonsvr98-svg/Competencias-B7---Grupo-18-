@@ -1,0 +1,12 @@
+node_modules/
+.env
+datos/*.json
+datos/*.jsonl
+datos/mensajes/
+datos/respaldos/
+publico/recursos/subidas/*
+!publico/recursos/subidas/.gitkeep
+!datos/config/
+!datos/config/**
+!datos/semilla/
+!datos/semilla/**

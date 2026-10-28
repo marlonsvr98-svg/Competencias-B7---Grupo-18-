@@ -1,0 +1,48 @@
+/**
+ * publico/css/modulos/admin-ajustes.css
+ * Estilos para el panel de configuración del administrador.
+ */
+
+.ajustes-seccion {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-l);
+  box-shadow: var(--sombra-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.ajustes-cabecera-seccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-borde);
+  padding-bottom: var(--espacio-s);
+}
+
+.ajustes-cabecera-seccion h2 {
+  font-size: var(--texto-l);
+  margin: 0;
+  color: var(--color-primario);
+}
+
+.ajustes-rejilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espacio-m);
+}
+
+@media (min-width: 640px) {
+  .ajustes-rejilla {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.resultado-prueba-ia {
+  padding: var(--espacio-m);
+  border-radius: var(--radio-m);
+  font-size: var(--texto-s);
+  display: none;
+}

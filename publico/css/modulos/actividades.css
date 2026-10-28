@@ -1,0 +1,125 @@
+/**
+ * publico/css/modulos/actividades.css
+ * Estilos para la pestaña de Actividades Educativas.
+ * Uso estricto de variables tokens.css y clases de componentes.css.
+ */
+
+.actividades-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding-bottom: var(--espacio-2xl);
+}
+
+.actividades-hero {
+  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+  color: var(--color-texto-inverso);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-xl) var(--espacio-l);
+  box-shadow: var(--sombra-2);
+  border-left: 6px solid var(--color-acento);
+}
+
+.actividades-hero__titulo {
+  font-size: var(--texto-2xl);
+  font-weight: var(--peso-extranegrita);
+  color: var(--color-texto-inverso);
+  margin: var(--espacio-xs) 0;
+}
+
+.actividades-hero__desc {
+  font-size: var(--texto-m);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 750px;
+  line-height: var(--interlineado-normal);
+  margin: 0;
+}
+
+.actividades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--espacio-l);
+}
+
+.actividad-card {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-l);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--espacio-m);
+  box-shadow: var(--sombra-1);
+  transition: var(--transicion);
+  position: relative;
+  overflow: hidden;
+}
+
+.actividad-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-3);
+  border-color: var(--color-acento);
+}
+
+.actividad-card--destacada {
+  border: 2px solid var(--color-acento);
+  background: linear-gradient(180deg, var(--color-superficie) 80%, rgba(255, 105, 0, 0.05) 100%);
+}
+
+.actividad-card__icono {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.actividad-card__titulo {
+  font-size: var(--texto-l);
+  font-weight: var(--peso-negrita);
+  color: var(--color-primario);
+  margin: var(--espacio-xs) 0;
+}
+
+.actividad-card__desc {
+  font-size: var(--texto-s);
+  color: var(--color-texto-suave);
+  line-height: var(--interlineado-normal);
+  margin: 0;
+}
+
+.actividad-card__caracteristicas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-xs);
+  margin-top: var(--espacio-xs);
+}
+
+.actividad-card__pie {
+  border-top: 1px solid var(--color-borde);
+  padding-top: var(--espacio-m);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacio-s);
+}
+
+/* Panel de logros del estudiante */
+.actividades-logros-banner {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-m) var(--espacio-l);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  box-shadow: var(--sombra-1);
+}
+
+@media (max-width: 600px) {
+  .actividades-hero__titulo {
+    font-size: var(--texto-xl);
+  }
+}

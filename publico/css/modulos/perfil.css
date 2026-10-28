@@ -1,0 +1,44 @@
+/**
+ * publico/css/modulos/perfil.css
+ * Estilos para el módulo de perfil de usuario.
+ */
+
+.perfil-contenedor {
+  max-width: 720px;
+  margin: var(--espacio-l) auto;
+}
+
+.perfil-avatar-seccion {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-l);
+  margin-bottom: var(--espacio-l);
+}
+
+.perfil-avatar-preview {
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radio-completo);
+  object-fit: cover;
+  background-color: var(--color-fondo);
+  border: 2px solid var(--color-borde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--texto-2xl);
+  color: var(--color-texto-suave);
+  flex-shrink: 0;
+}
+
+.perfil-avatar-preview img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radio-completo);
+  object-fit: cover;
+}
+
+.perfil-divisor {
+  border: none;
+  border-top: 1px solid var(--color-borde);
+  margin: var(--espacio-xl) 0;
+}
