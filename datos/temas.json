@@ -1,0 +1,34 @@
+[
+  {
+    "id": "tem_000003",
+    "unidadId": "uni_000001",
+    "titulo": "Sistema Nervioso",
+    "orden": 1,
+    "estado": "publicado",
+    "fecha": "2026-10-24T18:19:46.547Z"
+  },
+  {
+    "id": "tem_000004",
+    "unidadId": "uni_000001",
+    "titulo": "Sistema Digestivo",
+    "orden": 2,
+    "estado": "publicado",
+    "fecha": "2026-10-27T21:56:30.917Z"
+  },
+  {
+    "id": "tem_000005",
+    "unidadId": "uni_000001",
+    "titulo": "Sistema Respiratorio",
+    "orden": 3,
+    "estado": "publicado",
+    "fecha": "2026-10-27T21:56:55.516Z"
+  },
+  {
+    "id": "tem_000006",
+    "unidadId": "uni_000001",
+    "titulo": "Sistemas del Cuerpo Humano",
+    "orden": 4,
+    "estado": "publicado",
+    "fecha": "2026-10-27T21:57:11.260Z"
+  }
+]
